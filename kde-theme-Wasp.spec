@@ -1,4 +1,4 @@
-#$Revision: 1.4 $, $Date: 2004-04-16 19:39:50 $
+#$Revision: 1.5 $, $Date: 2004-04-17 10:00:23 $
 # TODO: (someone please do it, as I dont know kdm/gdm/evolution)
 # + add kdm icons
 # + add gdm styles
@@ -10,7 +10,7 @@ Summary:        KDE icons - %{_name}
 Summary(pl):    Motyw ikon do KDE - %{_name}
 Name:           kde-theme-%{_name}
 Version:	2.6.1
-Release:        0.1
+Release:        1
 License:        Design Science License (DSL)
 Group:          Themes
 Source0:        http://pyavitz.home.comcast.net/kde/%{_name}.SVG.Icons-v%{version}.tar.bz2
@@ -19,8 +19,7 @@ Source1:	dsl.txt
 URL:		http://www.kde-look.org/content/show.php?content=9763
 Requires:       kdelibs
 BuildRoot:      %{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
-%define         _htmldir        %{_docdir}/kde/HTML
+BuildArch:	noarch
 
 %description
 %{_name} is
@@ -69,12 +68,25 @@ Summary:        Color scheme for %{_name} theme to go with thinkeramik style
 Summary(pl):    Schemat kolorów dla motywu %{_name} pasuj±cy do stylu thinkeramik
 Group:          Themes
 Requires:       kdebase-core
-Requires:	kde-style-thinkeramik
+Requires:       kde-style-thinkeramik >= 3.1.4
 
 %description -n kde-colorscheme-%{_name}-thinkeramik
 Color scheme for %{_name} theme to go with thinkeramik style.
 
 %description -n kde-colorscheme-%{_name}-thinkeramik -l pl
+Schemat kolorów dla motywu %{_name} pasuj±cy do stylu thinkeramik.
+
+%package -n kde-colorscheme-%{_name}-activeheart
+Summary:        Color scheme for %{_name} theme to go with activeheart style
+Summary(pl):    Schemat kolorów dla motywu %{_name} pasuj±cy do stylu activeheart
+Group:          Themes
+Requires:       kdebase-core
+Requires:       kde-style-activeheart >= 1.1.7-2
+
+%description -n kde-colorscheme-%{_name}-activeheart
+Color scheme for %{_name} theme to go with thinkeramik style.
+
+%description -n kde-colorscheme-%{_name}-activeheart -l pl
 Schemat kolorów dla motywu %{_name} pasuj±cy do stylu thinkeramik.
 
 
@@ -118,6 +130,7 @@ Emotikony do kopete z tematu %{_name}.
 
 %prep
 cd $RPM_BUILD_DIR
+rm -rf Wasp
 mkdir Wasp
 cd Wasp
 install %{SOURCE1} ./
@@ -129,7 +142,9 @@ install -d $RPM_BUILD_ROOT%{_datadir}/apps/{kwin/icewm-themes,kicker/pics,ksplas
 %{__tar} xfj  %{SOURCE0} -C $RPM_BUILD_ROOT%{_iconsdir}
 ##mv $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras ./
 mv $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras/emoticons/Gossip $RPM_BUILD_ROOT%{_datadir}/apps/kopete/pics/emoticons/
-mv $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras/color-scheme/*.*rc $RPM_BUILD_ROOT%{_datadir}/apps/kdisplay/color-schemes/
+mv $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras/color-scheme/kde/*.*rc $RPM_BUILD_ROOT%{_datadir}/apps/kdisplay/color-schemes/
+mv $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras/color-scheme/activeheart/*.*rc $RPM_BUILD_ROOT%{_datadir}/apps/kdisplay/color-schemes/
+mv $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras/color-scheme/thinkeramik/*.*rc $RPM_BUILD_ROOT%{_datadir}/apps/kdisplay/color-schemes/
 mv $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras/icewm/BeWB-0.3 $RPM_BUILD_ROOT%{_datadir}/apps/kwin/icewm-themes/
 mv $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras/icewm/BeWasp $RPM_BUILD_ROOT%{_datadir}/apps/kwin/icewm-themes/
 mv $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras/kside/*.png $RPM_BUILD_ROOT%{_datadir}/apps/kicker/pics/
@@ -149,7 +164,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -n kde-icons-%{_name}
 %defattr(644,root,root,755)
-%doc dsl.txt
+%doc Wasp/dsl.txt
 %{_iconsdir}/Wasp
 
 %files -n kde-decoration-icewm-%{_name} 
@@ -166,7 +181,11 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -n kde-colorscheme-%{_name}-thinkeramik
 %defattr(644,root,root,755)
-%{_datadir}/apps/kdisplay/color-schemes/*.kcmrc
+%{_datadir}/apps/kdisplay/color-schemes/thinkeramik_*.kcmrc
+
+%files -n kde-colorscheme-%{_name}-activeheart
+%defattr(644,root,root,755)
+%{_datadir}/apps/kdisplay/color-schemes/activeheart_*.kcmrc
 
 %files -n kde-colorscheme-%{_name}
 %defattr(644,root,root,755)
