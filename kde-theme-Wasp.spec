@@ -1,11 +1,9 @@
-#$Revision: 1.9 $, $Date: 2004-04-17 23:31:54 $
-# TODO: (someone please do it, as I dont know kdm/gdm/evolution)
-# + add kdm icons
-# + add gdm styles
+#$Revision: 1.10 $, $Date: 2004-05-27 17:58:53 $
+# TODO: (someone please do it, as I dont know evolution)
 # + add evolution theme
 
-%define		_name	Wasp
-
+%define         _name	Wasp
+%define		_color_ver	0.4
 Summary:	KDE icons - %{_name}
 Summary(pl):	Motyw ikon do KDE - %{_name}
 Name:		kde-theme-%{_name}
@@ -36,10 +34,12 @@ Group:		Themes
 Requires:	kdelibs
 
 %description -n kde-icons-%{_name}
-Icon theme based on BeOS/Zeta icons.
+Icon theme based on BeOS/Zeta icons. It creates a cartoon and
+colorful, yet serious look.
 
 %description -n kde-icons-%{_name} -l pl
-Motyw ikon oparty o ikony z BeOS/Zeta.
+Motyw ikon oparty o ikony z BeOS/Zeta, tworzy kreskówkowy i kolorowy,
+ale wci±¿ powa¿ny wygl±d.
 
 %package -n kde-decoration-icewm-%{_name}
 Summary:	Icewm window decoration for kwin - %{_name}
@@ -48,74 +48,124 @@ Group:		Themes
 Requires:	kde-decoration-icewm
 
 %description -n kde-decoration-icewm-%{_name}
-Icewm window decoration for kwin - %{_name}.
+Two Beos looking decorations for kwin.
 
 %description -n kde-decoration-icewm-%{_name} -l pl
-Dekoracja icewm dla kwin - %{_name}.
+Dwie dekoracje podobne do Beos.
 
 %package -n kde-colorscheme-%{_name}
 Summary:	Color scheme for %{_name} theme
 Summary(pl):	Schemat kolorów dla motywu %{_name}
 Group:		Themes
+Version:	%{_color_ver}
 Requires:	kdebase-core
 
 %description -n kde-colorscheme-%{_name}
-Color scheme for %{_name} theme.
+Three color schemes with gray window background and yellow/dark
+blue/green selection backgrounds.
 
 %description -n kde-colorscheme-%{_name} -l pl
-Schemat kolorów dla motywu %{_name}.
+Trzy schematy kolorów z szarym t³em okna i ¿ó³tym, ciemnoniebieskim
+lub zielonym kolorem zaznaczenia.
 
 %package -n kde-colorscheme-%{_name}-thinkeramik
-Summary:	Color scheme for %{_name} theme to go with thinkeramik style
-Summary(pl):	Schemat kolorów dla motywu %{_name} pasuj±cy do stylu thinkeramik
+Summary:	Extending color scheme for %{_name} theme for thinkeramik style
+Summary(pl):	Rozszerzenia schematów kolorów dla motywu %{_name} do stylu thinkeramik
 Group:		Themes
 Requires:	kdebase-core
-Requires:	kde-style-thinkeramik >= 3.1.4
+Requires:	kde-style-thinkeramik >= 3.2.1
 
 %description -n kde-colorscheme-%{_name}-thinkeramik
-Color scheme for %{_name} theme to go with thinkeramik style.
+Three extending colorschemes with light blue/blue/dark
+blue/green/yellow colors for active tab marker, progress bar
+background, slider and scrollbar.
 
 %description -n kde-colorscheme-%{_name}-thinkeramik -l pl
-Schemat kolorów dla motywu %{_name} pasuj±cy do stylu thinkeramik.
+Trzy rozszerzenia schematów kolorów z jasnoniebieskimi, niebieskimi,
+ciemnoniebieskimi, ¿ó³tymi lub zielonymi kolorami wyróznika aktywnej
+karty, suwaka, paska przewijania oraz t³a paska postêpu.
 
 %package -n kde-colorscheme-%{_name}-activeheart
-Summary:	Color scheme for %{_name} theme to go with activeheart style
-Summary(pl):	Schemat kolorów dla motywu %{_name} pasuj±cy do stylu activeheart
+Summary:	Extending color scheme for %{_name} theme for activeheart style
+Summary(pl):	Rozszerzenia schematów kolorów dla motywu %{_name} do stylu activeheart
 Group:		Themes
 Requires:	kdebase-core
 Requires:	kde-style-ActiveHeart >= 1.1.7-2
 
 %description -n kde-colorscheme-%{_name}-activeheart
-Color scheme for %{_name} theme to go with thinkeramik style.
+Three extending colorschemes with blue/dark blue/green colors for
+active tab marker, progress bar background, slider and scrollbar.
 
 %description -n kde-colorscheme-%{_name}-activeheart -l pl
-Schemat kolorów dla motywu %{_name} pasuj±cy do stylu thinkeramik.
+Trzy rozszerzenia schematów kolorów z niebieskimi, ciemnoniebieskimi
+lub zielonymi kolorami wyróznika aktywnej karty, t³a paska postêpu,
+suwaka oraz paska przewijania.
+
+%package -n kdm-user-pictures-%{_name}
+Summary:	KDM user picture - %{_name}
+Summary(pl):	Obrazki dla u¿ytkowników w KDM - %{_name}
+Group:		Themes
+# Contains /usr/share/wallpapers
+Requires:	kdm
+
+%description -n kdm-user-pictures-%{_name}
+Two user pictures with a person on surfboard. One in yellow (normal
+user) and in red (root).
+
+%description -n kdm-user-pictures-%{_name} -lpl
+Dwa obrazki u¿ytkowników z osob± na desce surfingowej. Jedna ubrana na
+¿ó³to (zwyk³y u¿ytkownik) i jedna na czerwono (root).
+
+
+%package -n gdm-theme-%{_name}
+Summary:	A Wasp theme for the GNOME Display Manager
+Summary(pl):	Motyw Wasp do GDM
+Group:		Themes
+Requires:	gdm
+
+%description -n gdm-theme-%{_name}
+Three login screens for GDM with a cartoon computer icon in the center
+and a login prompt under it. One with a yellow background, second
+yellow with a gray area in the top left corner and third with a gray
+background and yellow area in the top left corner.
+
+%description -n gdm-theme-%{_name} -l pl
+Trzy ekrany logowania do GDM z kreskówkow± ikon± komputera w ¶rodku i
+polem do logowania umieszczonym pod ni±. Jeden z nich ma ca³e ¿ó³te
+t³o, drugi ¿ó³te t³o i szary wycinek w lewym górnym rogu, a trzeci
+szare t³o i ¿ó³ty wycinek.
 
 %package -n kde-splash-%{_name}
 Summary:	Splash screen %{_name} theme
-Summary(pl):	Obrazek startowy dla motywu %{_name}
+Summary(pl):	Ekran startowy dla motywu %{_name}
 Group:		Themes
 Requires:	kdebase-desktop >= 9:3.1.90
 
 %description -n kde-splash-%{_name}
-Splash screen %{_name} theme.
+Two splash screens (yellow and blue) with a "kde loading" bubble text
+in the top left corner and a cartoon looking, Beos-like computer icon
+to the right, and of course the standrad progress/icon bars.
 
 %description -n kde-splash-%{_name} -l pl
-Obrazek startowy dla motywu %{_name}.
+Dwa ekrany startowe (niebieski i ¿ó³ty) z dymkiem z tekstem "kde
+loading" w lewym górnym rogu oraz kreskówkow± ikon± komputera po
+prawej, no i oczywi¶cie standardowymi paskami postêpu i ikon.
 
 %package -n kde-kside-%{_name}
-Summary:	Kicker sidebar from %{_name}
-Summary(pl):	Boczny pasek do menu kde z motywu %{_name}
+Summary:	Kicker side image from %{_name}
+Summary(pl):	Boczny pasek do menu KDE z motywu %{_name}
 Group:		Themes
 Obsoletes:	kde-kside
 Provides:	kde-kside
 Requires:	kdebase-kicker >= 9:3.1.90.030726-2
 
 %description -n kde-kside-%{_name}
-Kicker sidebar from %{_name}.
+A kicker side image with the "Wasp" text and a part of a cartoon
+looging computer icon.
 
 %description -n kde-kside-%{_name} -l pl
-Boczny pasek do menu kde z motywu %{_name}.
+Pasek boczny do menu KDE z napisem "Wasp" oraz fragmentem kreskówkowej
+ikony komputera.
 
 %package -n kopete-emoticons-%{_name}
 Summary:	Kopete emoticons from %{_name} theme
@@ -124,10 +174,10 @@ Group:		Themes
 Requires:	kdenetwork-kopete
 
 %description -n kopete-emoticons-%{_name}
-Kopete emoticons from %{_name} theme.
+Round, convex, dark yellow emoticons with dark red faces.
 
 %description -n kopete-emoticons-%{_name} -l pl
-Emotikony do kopete z tematu %{_name}.
+Okr±g³e, wypuk³e, ciemno¿ó³te emotikony z ciemnoczerwonymi twarzami.
 
 %prep
 cd $RPM_BUILD_DIR
@@ -138,36 +188,47 @@ install %{SOURCE1} ./
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_iconsdir},%{_datadir}/apps/kopete/pics/emoticons,%{_datadir}/apps/kdisplay/color-schemes}
+install -d $RPM_BUILD_ROOT{%{_iconsdir},%{_datadir}/apps/{kopete/pics/emoticons,kdisplay/{color-schemes,styleconfs}}}
 install -d $RPM_BUILD_ROOT%{_datadir}/apps/{kwin/icewm-themes,kicker/pics,ksplash/Themes}
-%{__tar} xfj %{SOURCE0} -C $RPM_BUILD_ROOT%{_iconsdir}
+install -d $RPM_BUILD_ROOT%{_datadir}/{gdm/themes,apps/kdm/pics/users}
+%{__tar} xfj  %{SOURCE0} -C $RPM_BUILD_ROOT%{_iconsdir}
 ##mv $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras ./
 mv $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras/emoticons/Gossip $RPM_BUILD_ROOT%{_datadir}/apps/kopete/pics/emoticons/
 mv $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras/color-scheme/kde/*.*rc $RPM_BUILD_ROOT%{_datadir}/apps/kdisplay/color-schemes/
-mv $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras/color-scheme/activeheart/*.*rc $RPM_BUILD_ROOT%{_datadir}/apps/kdisplay/color-schemes/
-mv $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras/color-scheme/thinkeramik/*.*rc $RPM_BUILD_ROOT%{_datadir}/apps/kdisplay/color-schemes/
+mv $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras/color-scheme/activeheart/*.*rc $RPM_BUILD_ROOT%{_datadir}/apps/kdisplay/styleconfs/
+mv $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras/color-scheme/thinkeramik/*.*rc $RPM_BUILD_ROOT%{_datadir}/apps/kdisplay/styleconfs/
 mv $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras/icewm/BeWB-0.3 $RPM_BUILD_ROOT%{_datadir}/apps/kwin/icewm-themes/
 mv $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras/icewm/BeWasp $RPM_BUILD_ROOT%{_datadir}/apps/kwin/icewm-themes/
 mv $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras/kside/*.png $RPM_BUILD_ROOT%{_datadir}/apps/kicker/pics/
-mv $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras/splash/Gonx $RPM_BUILD_ROOT%{_datadir}/apps/ksplash/Themes/
-mv $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras/splash/Wasp $RPM_BUILD_ROOT%{_datadir}/apps/ksplash/Themes/
-mv $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras/splash/WaspWare $RPM_BUILD_ROOT%{_datadir}/apps/ksplash/Themes/
+mv $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras/splash/Gonx	$RPM_BUILD_ROOT%{_datadir}/apps/ksplash/Themes/
+mv $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras/splash/Wasp   $RPM_BUILD_ROOT%{_datadir}/apps/ksplash/Themes/
+
+
 # mv extras/evolution <WHERE>
-# mv extras/kdm/*.png <WHERE>
-# mv extras/gdm/Wasp <WHERE>
-# mv extras/gdm/Wasp.G <WHERE>
-# mv extras/gdm/Wasp.Y <WHERE>
+mv -f $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras/kdm/*.png $RPM_BUILD_ROOT%{_datadir}/apps/kdm/pics/users/
+mv -f $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras/gdm/Wasp $RPM_BUILD_ROOT%{_datadir}/gdm/themes/
+mv -f $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras/gdm/Wasp.G $RPM_BUILD_ROOT%{_datadir}/gdm/themes/
+mv -f $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras/gdm/Wasp.Y $RPM_BUILD_ROOT%{_datadir}/gdm/themes/
 rm -rf $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras
+
 
 %clean
 rm -rf $RPM_BUILD_ROOT
+
+%files -n gdm-theme-%{_name}
+%defattr(644,root,root,755)
+%{_datadir}/gdm/themes/*
 
 %files -n kde-icons-%{_name}
 %defattr(644,root,root,755)
 %doc Wasp/dsl.txt
 %{_iconsdir}/Wasp
 
-%files -n kde-decoration-icewm-%{_name} 
+%files -n kdm-user-pictures-%{_name}
+%defattr(644,root,root,755)
+%{_datadir}/apps/kdm/pics/users/*
+
+%files -n kde-decoration-icewm-%{_name}
 %defattr(644,root,root,755)
 %{_datadir}/apps/kwin/icewm-themes/*
 
@@ -181,11 +242,11 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -n kde-colorscheme-%{_name}-thinkeramik
 %defattr(644,root,root,755)
-%{_datadir}/apps/kdisplay/color-schemes/thinkeramik_*.kcmrc
+%{_datadir}/apps/kdisplay/styleconfs/thinkeramik_*.kcmrc
 
 %files -n kde-colorscheme-%{_name}-activeheart
 %defattr(644,root,root,755)
-%{_datadir}/apps/kdisplay/color-schemes/activeheart_*.kcmrc
+%{_datadir}/apps/kdisplay/styleconfs/activeheart_*.kcmrc
 
 %files -n kde-colorscheme-%{_name}
 %defattr(644,root,root,755)
