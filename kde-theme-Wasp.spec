@@ -1,4 +1,4 @@
-#$Revision: 1.10 $, $Date: 2004-05-27 17:58:53 $
+#$Revision: 1.11 $, $Date: 2004-05-27 18:46:36 $
 # TODO: (someone please do it, as I dont know evolution)
 # + add evolution theme
 
@@ -8,7 +8,7 @@ Summary:	KDE icons - %{_name}
 Summary(pl):	Motyw ikon do KDE - %{_name}
 Name:		kde-theme-%{_name}
 Version:	2.6.1
-Release:	1
+Release:	2
 License:	Design Science License (DSL)
 Group:		Themes
 Source0:	http://pyavitz.home.comcast.net/kde/%{_name}.SVG.Icons-v%{version}.tar.bz2
@@ -73,7 +73,7 @@ Summary:	Extending color scheme for %{_name} theme for thinkeramik style
 Summary(pl):	Rozszerzenia schematów kolorów dla motywu %{_name} do stylu thinkeramik
 Group:		Themes
 Requires:	kdebase-core
-Requires:	kde-style-thinkeramik >= 3.2.1
+Requires:	kde-style-thinkeramik >= 3.2.1-2
 
 %description -n kde-colorscheme-%{_name}-thinkeramik
 Three extending colorschemes with light blue/blue/dark
@@ -90,7 +90,7 @@ Summary:	Extending color scheme for %{_name} theme for activeheart style
 Summary(pl):	Rozszerzenia schematów kolorów dla motywu %{_name} do stylu activeheart
 Group:		Themes
 Requires:	kdebase-core
-Requires:	kde-style-ActiveHeart >= 1.1.7-2
+Requires:	kde-style-ActiveHeart >= 1.2.1-2
 
 %description -n kde-colorscheme-%{_name}-activeheart
 Three extending colorschemes with blue/dark blue/green colors for
