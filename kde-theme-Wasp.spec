@@ -1,4 +1,4 @@
-#$Revision: 1.1 $, $Date: 2004-04-16 19:04:30 $
+#$Revision: 1.2 $, $Date: 2004-04-16 19:23:45 $
 # TODO: (someone please do it, as I dont know kdm/gdm/evolution)
 # + add kdm icons
 # + add gdm styles
@@ -116,7 +116,11 @@ Kopete emoticons from %{_name} theme.
 %description -n kopete-emoticons-%{_name} -l pl
 Emotikony do kopete z tematu %{_name}.
 
-%s
+%prep
+cd $RPM_BUILD_DIR
+mkdir Wasp
+cd Wasp
+install %{SOURCE1} ./
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -139,11 +143,13 @@ mv $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras/splash/WaspWare   $RPM_BUILD_ROOT%{_d
 # mv extras/gdm/Wasp.Y <WHERE>
 rm -rf $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras
 
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files -n kde-icons-%{_name}
 %defattr(644,root,root,755)
+%doc dsl.txt
 %{_iconsdir}/Wasp
 
 %files -n kde-decoration-icewm-%{_name} 
