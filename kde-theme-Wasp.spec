@@ -1,8 +1,8 @@
-#$Revision: 1.11 $, $Date: 2004-05-27 18:46:36 $
+#$Revision: 1.12 $, $Date: 2004-11-04 13:10:53 $
 # TODO: (someone please do it, as I dont know evolution)
 # + add evolution theme
 
-%define         _name	Wasp
+%define		_name	Wasp
 %define		_color_ver	0.4
 Summary:	KDE icons - %{_name}
 Summary(pl):	Motyw ikon do KDE - %{_name}
@@ -191,7 +191,7 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_iconsdir},%{_datadir}/apps/{kopete/pics/emoticons,kdisplay/{color-schemes,styleconfs}}}
 install -d $RPM_BUILD_ROOT%{_datadir}/apps/{kwin/icewm-themes,kicker/pics,ksplash/Themes}
 install -d $RPM_BUILD_ROOT%{_datadir}/{gdm/themes,apps/kdm/pics/users}
-%{__tar} xfj  %{SOURCE0} -C $RPM_BUILD_ROOT%{_iconsdir}
+%{__tar} xfj %{SOURCE0} -C $RPM_BUILD_ROOT%{_iconsdir}
 ##mv $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras ./
 mv $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras/emoticons/Gossip $RPM_BUILD_ROOT%{_datadir}/apps/kopete/pics/emoticons/
 mv $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras/color-scheme/kde/*.*rc $RPM_BUILD_ROOT%{_datadir}/apps/kdisplay/color-schemes/
@@ -200,8 +200,8 @@ mv $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras/color-scheme/thinkeramik/*.*rc $RPM_B
 mv $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras/icewm/BeWB-0.3 $RPM_BUILD_ROOT%{_datadir}/apps/kwin/icewm-themes/
 mv $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras/icewm/BeWasp $RPM_BUILD_ROOT%{_datadir}/apps/kwin/icewm-themes/
 mv $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras/kside/*.png $RPM_BUILD_ROOT%{_datadir}/apps/kicker/pics/
-mv $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras/splash/Gonx	$RPM_BUILD_ROOT%{_datadir}/apps/ksplash/Themes/
-mv $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras/splash/Wasp   $RPM_BUILD_ROOT%{_datadir}/apps/ksplash/Themes/
+mv $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras/splash/Gonx $RPM_BUILD_ROOT%{_datadir}/apps/ksplash/Themes/
+mv $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras/splash/Wasp $RPM_BUILD_ROOT%{_datadir}/apps/ksplash/Themes/
 
 
 # mv extras/evolution <WHERE>
