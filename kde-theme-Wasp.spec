@@ -1,4 +1,4 @@
-#$Revision: 1.5 $, $Date: 2004-04-17 10:00:23 $
+#$Revision: 1.6 $, $Date: 2004-04-17 10:32:31 $
 # TODO: (someone please do it, as I dont know kdm/gdm/evolution)
 # + add kdm icons
 # + add gdm styles
@@ -81,7 +81,7 @@ Summary:        Color scheme for %{_name} theme to go with activeheart style
 Summary(pl):    Schemat kolorów dla motywu %{_name} pasuj±cy do stylu activeheart
 Group:          Themes
 Requires:       kdebase-core
-Requires:       kde-style-activeheart >= 1.1.7-2
+Requires:       kde-style-ActiveHeart >= 1.1.7-2
 
 %description -n kde-colorscheme-%{_name}-activeheart
 Color scheme for %{_name} theme to go with thinkeramik style.
