@@ -1,10 +1,10 @@
-#$Revision: 1.7 $, $Date: 2004-04-17 13:44:12 $
+#$Revision: 1.8 $, $Date: 2004-04-17 13:54:01 $
 # TODO: (someone please do it, as I dont know kdm/gdm/evolution)
 # + add kdm icons
 # + add gdm styles
 # + add evolution theme
 
-%define	_name	Wasp
+%define		_name	Wasp
 
 Summary:	KDE icons - %{_name}
 Summary(pl):	Motyw ikon do KDE - %{_name}
