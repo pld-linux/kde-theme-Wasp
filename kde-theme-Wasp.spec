@@ -1,4 +1,4 @@
-#$Revision: 1.8 $, $Date: 2004-04-17 13:54:01 $
+#$Revision: 1.9 $, $Date: 2004-04-17 23:31:54 $
 # TODO: (someone please do it, as I dont know kdm/gdm/evolution)
 # + add kdm icons
 # + add gdm styles
@@ -22,10 +22,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 BuildArch:	noarch
 
 %description
-%{_name} is
+Wasp Icons for KDE, originally released on GNOME as part of the GNOME
+Themes Extras Project.
 
 %description -l pl
-%{_name} to temat ikon
+Wasp Icons dla KDE, oryginalnie wydany dla GNOME jako czê¶æ projektu
+GNOME THemes Extras.
 
 %package -n kde-icons-%{_name}
 Summary:	KDE icon theme - %{_name}
@@ -88,7 +90,6 @@ Color scheme for %{_name} theme to go with thinkeramik style.
 
 %description -n kde-colorscheme-%{_name}-activeheart -l pl
 Schemat kolorów dla motywu %{_name} pasuj±cy do stylu thinkeramik.
-
 
 %package -n kde-splash-%{_name}
 Summary:	Splash screen %{_name} theme
