@@ -1,24 +1,24 @@
-#$Revision: 1.6 $, $Date: 2004-04-17 10:32:31 $
+#$Revision: 1.7 $, $Date: 2004-04-17 13:44:12 $
 # TODO: (someone please do it, as I dont know kdm/gdm/evolution)
 # + add kdm icons
 # + add gdm styles
 # + add evolution theme
 
-%define         _name Wasp
+%define	_name	Wasp
 
-Summary:        KDE icons - %{_name}
-Summary(pl):    Motyw ikon do KDE - %{_name}
-Name:           kde-theme-%{_name}
+Summary:	KDE icons - %{_name}
+Summary(pl):	Motyw ikon do KDE - %{_name}
+Name:		kde-theme-%{_name}
 Version:	2.6.1
-Release:        1
-License:        Design Science License (DSL)
-Group:          Themes
-Source0:        http://pyavitz.home.comcast.net/kde/%{_name}.SVG.Icons-v%{version}.tar.bz2
+Release:	1
+License:	Design Science License (DSL)
+Group:		Themes
+Source0:	http://pyavitz.home.comcast.net/kde/%{_name}.SVG.Icons-v%{version}.tar.bz2
 # Source0-md5:	ffe038b797cf9a7572b396ec5c618c4b
 Source1:	dsl.txt
 URL:		http://www.kde-look.org/content/show.php?content=9763
-Requires:       kdelibs
-BuildRoot:      %{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+Requires:	kdelibs
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 BuildArch:	noarch
 
 %description
@@ -28,10 +28,10 @@ BuildArch:	noarch
 %{_name} to temat ikon
 
 %package -n kde-icons-%{_name}
-Summary:        KDE icon theme - %{_name}
-Summary(pl):    Motyw ikon do KDE - %{_name}
-Group:          Themes
-Requires:       kdelibs
+Summary:	KDE icon theme - %{_name}
+Summary(pl):	Motyw ikon do KDE - %{_name}
+Group:		Themes
+Requires:	kdelibs
 
 %description -n kde-icons-%{_name}
 Icon theme based on BeOS/Zeta icons.
@@ -40,10 +40,10 @@ Icon theme based on BeOS/Zeta icons.
 Motyw ikon oparty o ikony z BeOS/Zeta.
 
 %package -n kde-decoration-icewm-%{_name}
-Summary:        Icewm window decoration for kwin - %{_name}
-Summary(pl):    Dekoracja icewm dla kwin - %{_name}
-Group:          Themes
-Requires:       kde-decoration-icewm
+Summary:	Icewm window decoration for kwin - %{_name}
+Summary(pl):	Dekoracja icewm dla kwin - %{_name}
+Group:		Themes
+Requires:	kde-decoration-icewm
 
 %description -n kde-decoration-icewm-%{_name}
 Icewm window decoration for kwin - %{_name}.
@@ -52,10 +52,10 @@ Icewm window decoration for kwin - %{_name}.
 Dekoracja icewm dla kwin - %{_name}.
 
 %package -n kde-colorscheme-%{_name}
-Summary:        Color scheme for %{_name} theme
-Summary(pl):    Schemat kolorów dla motywu %{_name}
-Group:          Themes
-Requires:       kdebase-core
+Summary:	Color scheme for %{_name} theme
+Summary(pl):	Schemat kolorów dla motywu %{_name}
+Group:		Themes
+Requires:	kdebase-core
 
 %description -n kde-colorscheme-%{_name}
 Color scheme for %{_name} theme.
@@ -64,11 +64,11 @@ Color scheme for %{_name} theme.
 Schemat kolorów dla motywu %{_name}.
 
 %package -n kde-colorscheme-%{_name}-thinkeramik
-Summary:        Color scheme for %{_name} theme to go with thinkeramik style
-Summary(pl):    Schemat kolorów dla motywu %{_name} pasuj±cy do stylu thinkeramik
-Group:          Themes
-Requires:       kdebase-core
-Requires:       kde-style-thinkeramik >= 3.1.4
+Summary:	Color scheme for %{_name} theme to go with thinkeramik style
+Summary(pl):	Schemat kolorów dla motywu %{_name} pasuj±cy do stylu thinkeramik
+Group:		Themes
+Requires:	kdebase-core
+Requires:	kde-style-thinkeramik >= 3.1.4
 
 %description -n kde-colorscheme-%{_name}-thinkeramik
 Color scheme for %{_name} theme to go with thinkeramik style.
@@ -77,11 +77,11 @@ Color scheme for %{_name} theme to go with thinkeramik style.
 Schemat kolorów dla motywu %{_name} pasuj±cy do stylu thinkeramik.
 
 %package -n kde-colorscheme-%{_name}-activeheart
-Summary:        Color scheme for %{_name} theme to go with activeheart style
-Summary(pl):    Schemat kolorów dla motywu %{_name} pasuj±cy do stylu activeheart
-Group:          Themes
-Requires:       kdebase-core
-Requires:       kde-style-ActiveHeart >= 1.1.7-2
+Summary:	Color scheme for %{_name} theme to go with activeheart style
+Summary(pl):	Schemat kolorów dla motywu %{_name} pasuj±cy do stylu activeheart
+Group:		Themes
+Requires:	kdebase-core
+Requires:	kde-style-ActiveHeart >= 1.1.7-2
 
 %description -n kde-colorscheme-%{_name}-activeheart
 Color scheme for %{_name} theme to go with thinkeramik style.
@@ -91,10 +91,10 @@ Schemat kolorów dla motywu %{_name} pasuj±cy do stylu thinkeramik.
 
 
 %package -n kde-splash-%{_name}
-Summary:        Splash screen %{_name} theme
-Summary(pl):    Obrazek startowy dla motywu %{_name}
-Group:          Themes
-Requires:       kdebase-desktop >= 9:3.1.90
+Summary:	Splash screen %{_name} theme
+Summary(pl):	Obrazek startowy dla motywu %{_name}
+Group:		Themes
+Requires:	kdebase-desktop >= 9:3.1.90
 
 %description -n kde-splash-%{_name}
 Splash screen %{_name} theme.
@@ -103,12 +103,12 @@ Splash screen %{_name} theme.
 Obrazek startowy dla motywu %{_name}.
 
 %package -n kde-kside-%{_name}
-Summary:        Kicker sidebar from %{_name}
-Summary(pl):    Boczny pasek do menu kde z motywu %{_name}
-Group:          Themes
-Obsoletes:      kde-kside
-Provides:       kde-kside
-Requires:       kdebase-kicker >= 9:3.1.90.030726-2
+Summary:	Kicker sidebar from %{_name}
+Summary(pl):	Boczny pasek do menu kde z motywu %{_name}
+Group:		Themes
+Obsoletes:	kde-kside
+Provides:	kde-kside
+Requires:	kdebase-kicker >= 9:3.1.90.030726-2
 
 %description -n kde-kside-%{_name}
 Kicker sidebar from %{_name}.
@@ -117,10 +117,10 @@ Kicker sidebar from %{_name}.
 Boczny pasek do menu kde z motywu %{_name}.
 
 %package -n kopete-emoticons-%{_name}
-Summary:        Kopete emoticons from %{_name} theme
-Summary(pl):    Emotikony do kopete z tematu %{_name}
-Group:          Themes
-Requires:       kdenetwork-kopete
+Summary:	Kopete emoticons from %{_name} theme
+Summary(pl):	Emotikony do kopete z tematu %{_name}
+Group:		Themes
+Requires:	kdenetwork-kopete
 
 %description -n kopete-emoticons-%{_name}
 Kopete emoticons from %{_name} theme.
@@ -139,7 +139,7 @@ install %{SOURCE1} ./
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_iconsdir},%{_datadir}/apps/kopete/pics/emoticons,%{_datadir}/apps/kdisplay/color-schemes}
 install -d $RPM_BUILD_ROOT%{_datadir}/apps/{kwin/icewm-themes,kicker/pics,ksplash/Themes}
-%{__tar} xfj  %{SOURCE0} -C $RPM_BUILD_ROOT%{_iconsdir}
+%{__tar} xfj %{SOURCE0} -C $RPM_BUILD_ROOT%{_iconsdir}
 ##mv $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras ./
 mv $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras/emoticons/Gossip $RPM_BUILD_ROOT%{_datadir}/apps/kopete/pics/emoticons/
 mv $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras/color-scheme/kde/*.*rc $RPM_BUILD_ROOT%{_datadir}/apps/kdisplay/color-schemes/
@@ -148,16 +148,15 @@ mv $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras/color-scheme/thinkeramik/*.*rc $RPM_B
 mv $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras/icewm/BeWB-0.3 $RPM_BUILD_ROOT%{_datadir}/apps/kwin/icewm-themes/
 mv $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras/icewm/BeWasp $RPM_BUILD_ROOT%{_datadir}/apps/kwin/icewm-themes/
 mv $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras/kside/*.png $RPM_BUILD_ROOT%{_datadir}/apps/kicker/pics/
-mv $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras/splash/Gonx	$RPM_BUILD_ROOT%{_datadir}/apps/ksplash/Themes/
-mv $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras/splash/Wasp   $RPM_BUILD_ROOT%{_datadir}/apps/ksplash/Themes/
-mv $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras/splash/WaspWare   $RPM_BUILD_ROOT%{_datadir}/apps/ksplash/Themes/
+mv $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras/splash/Gonx $RPM_BUILD_ROOT%{_datadir}/apps/ksplash/Themes/
+mv $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras/splash/Wasp $RPM_BUILD_ROOT%{_datadir}/apps/ksplash/Themes/
+mv $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras/splash/WaspWare $RPM_BUILD_ROOT%{_datadir}/apps/ksplash/Themes/
 # mv extras/evolution <WHERE>
 # mv extras/kdm/*.png <WHERE>
 # mv extras/gdm/Wasp <WHERE>
 # mv extras/gdm/Wasp.G <WHERE>
 # mv extras/gdm/Wasp.Y <WHERE>
 rm -rf $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras
-
 
 %clean
 rm -rf $RPM_BUILD_ROOT
