@@ -1,4 +1,4 @@
-#$Revision: 1.3 $, $Date: 2004-04-16 19:27:22 $
+#$Revision: 1.4 $, $Date: 2004-04-16 19:39:50 $
 # TODO: (someone please do it, as I dont know kdm/gdm/evolution)
 # + add kdm icons
 # + add gdm styles
@@ -11,11 +11,11 @@ Summary(pl):    Motyw ikon do KDE - %{_name}
 Name:           kde-theme-%{_name}
 Version:	2.6.1
 Release:        0.1
-License:        DPL
+License:        Design Science License (DSL)
 Group:          Themes
 Source0:        http://pyavitz.home.comcast.net/kde/%{_name}.SVG.Icons-v%{version}.tar.bz2
 # Source0-md5:	ffe038b797cf9a7572b396ec5c618c4b
-Source1:	http://www.dsl.org/copyleft/dsl.txt
+Source1:	dsl.txt
 URL:		http://www.kde-look.org/content/show.php?content=9763
 Requires:       kdelibs
 BuildRoot:      %{tmpdir}/%{name}-%{version}-root-%(id -u -n)
