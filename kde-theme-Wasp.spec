@@ -1,4 +1,4 @@
-#$Revision: 1.2 $, $Date: 2004-04-16 19:23:45 $
+#$Revision: 1.3 $, $Date: 2004-04-16 19:27:22 $
 # TODO: (someone please do it, as I dont know kdm/gdm/evolution)
 # + add kdm icons
 # + add gdm styles
@@ -14,7 +14,7 @@ Release:        0.1
 License:        DPL
 Group:          Themes
 Source0:        http://pyavitz.home.comcast.net/kde/%{_name}.SVG.Icons-v%{version}.tar.bz2
-# Source0-md5:	f80430ff109166c92009b19528e679e8
+# Source0-md5:	ffe038b797cf9a7572b396ec5c618c4b
 Source1:	http://www.dsl.org/copyleft/dsl.txt
 URL:		http://www.kde-look.org/content/show.php?content=9763
 Requires:       kdelibs
