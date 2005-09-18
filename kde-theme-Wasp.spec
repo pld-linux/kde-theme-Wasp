@@ -1,6 +1,5 @@
-#$Revision: 1.12 $, $Date: 2004-11-04 13:10:53 $
-# TODO: (someone please do it, as I dont know evolution)
-# + add evolution theme
+# TODO:
+# - (someone please do it, as I dont know evolution) add evolution theme
 
 %define		_name	Wasp
 %define		_color_ver	0.4
@@ -8,14 +7,19 @@ Summary:	KDE icons - %{_name}
 Summary(pl):	Motyw ikon do KDE - %{_name}
 Name:		kde-theme-%{_name}
 Version:	2.6.1
-Release:	2
+Release:	3
 License:	Design Science License (DSL)
 Group:		Themes
 Source0:	http://pyavitz.home.comcast.net/kde/%{_name}.SVG.Icons-v%{version}.tar.bz2
 # Source0-md5:	ffe038b797cf9a7572b396ec5c618c4b
 Source1:	dsl.txt
 URL:		http://www.kde-look.org/content/show.php?content=9763
-Requires:	kdelibs
+Requires:	kde-icons-%{_name}
+Requires:	kde-decoration-icewm-%{_name}
+Requires:	kde-colorscheme-%{_name}-thinkeramik
+Requires:	kde-colorscheme-%{_name}-activeheart
+Requires:	kde-colorscheme-%{_name}
+Requires:	kde-splash-%{_name}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 BuildArch:	noarch
 
@@ -214,6 +218,8 @@ rm -rf $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras
 
 %clean
 rm -rf $RPM_BUILD_ROOT
+
+%files
 
 %files -n gdm-theme-%{_name}
 %defattr(644,root,root,755)
