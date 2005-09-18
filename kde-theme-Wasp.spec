@@ -7,7 +7,7 @@ Summary:	KDE icons - %{_name}
 Summary(pl):	Motyw ikon do KDE - %{_name}
 Name:		kde-theme-%{_name}
 Version:	2.6.1
-Release:	3
+Release:	4
 License:	Design Science License (DSL)
 Group:		Themes
 Source0:	http://pyavitz.home.comcast.net/kde/%{_name}.SVG.Icons-v%{version}.tar.bz2
@@ -161,7 +161,7 @@ Summary(pl):	Boczny pasek do menu KDE z motywu %{_name}
 Group:		Themes
 Obsoletes:	kde-kside
 Provides:	kde-kside
-Requires:	kdebase-kicker >= 9:3.1.90.030726-2
+Requires:	kdebase-desktop >= 9:3.1.90.030726-2
 
 %description -n kde-kside-%{_name}
 A kicker side image with the "Wasp" text and a part of a cartoon
@@ -207,14 +207,12 @@ mv $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras/kside/*.png $RPM_BUILD_ROOT%{_datadir
 mv $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras/splash/Gonx $RPM_BUILD_ROOT%{_datadir}/apps/ksplash/Themes/
 mv $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras/splash/Wasp $RPM_BUILD_ROOT%{_datadir}/apps/ksplash/Themes/
 
-
 # mv extras/evolution <WHERE>
 mv -f $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras/kdm/*.png $RPM_BUILD_ROOT%{_datadir}/apps/kdm/pics/users/
 mv -f $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras/gdm/Wasp $RPM_BUILD_ROOT%{_datadir}/gdm/themes/
 mv -f $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras/gdm/Wasp.G $RPM_BUILD_ROOT%{_datadir}/gdm/themes/
 mv -f $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras/gdm/Wasp.Y $RPM_BUILD_ROOT%{_datadir}/gdm/themes/
 rm -rf $RPM_BUILD_ROOT%{_iconsdir}/Wasp/extras
-
 
 %clean
 rm -rf $RPM_BUILD_ROOT
