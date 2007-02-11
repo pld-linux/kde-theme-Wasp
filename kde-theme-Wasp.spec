@@ -116,7 +116,7 @@ Requires:	kdm
 Two user pictures with a person on surfboard. One in yellow (normal
 user) and in red (root).
 
-%description -n kdm-user-pictures-%{_name} -lpl
+%description -n kdm-user-pictures-%{_name} -l pl
 Dwa obrazki u¿ytkowników z osob± na desce surfingowej. Jedna ubrana na
 ¿ó³to (zwyk³y u¿ytkownik) i jedna na czerwono (root).
 
