@@ -4,7 +4,7 @@
 %define		_name	Wasp
 %define		_color_ver	0.4
 Summary:	KDE icons - %{_name}
-Summary(pl):	Motyw ikon do KDE - %{_name}
+Summary(pl.UTF-8):   Motyw ikon do KDE - %{_name}
 Name:		kde-theme-%{_name}
 Version:	2.6.1
 Release:	4
@@ -27,13 +27,13 @@ BuildArch:	noarch
 Wasp Icons for KDE, originally released on GNOME as part of the GNOME
 Themes Extras Project.
 
-%description -l pl
-Wasp Icons dla KDE, oryginalnie wydany dla GNOME jako czÍ∂Ê projektu
+%description -l pl.UTF-8
+Wasp Icons dla KDE, oryginalnie wydany dla GNOME jako czƒô≈õƒá projektu
 GNOME THemes Extras.
 
 %package -n kde-icons-%{_name}
 Summary:	KDE icon theme - %{_name}
-Summary(pl):	Motyw ikon do KDE - %{_name}
+Summary(pl.UTF-8):   Motyw ikon do KDE - %{_name}
 Group:		Themes
 Requires:	kdelibs
 
@@ -41,25 +41,25 @@ Requires:	kdelibs
 Icon theme based on BeOS/Zeta icons. It creates a cartoon and
 colorful, yet serious look.
 
-%description -n kde-icons-%{_name} -l pl
-Motyw ikon oparty o ikony z BeOS/Zeta, tworzy kreskÛwkowy i kolorowy,
-ale wci±ø powaøny wygl±d.
+%description -n kde-icons-%{_name} -l pl.UTF-8
+Motyw ikon oparty o ikony z BeOS/Zeta, tworzy kresk√≥wkowy i kolorowy,
+ale wciƒÖ≈º powa≈ºny wyglƒÖd.
 
 %package -n kde-decoration-icewm-%{_name}
 Summary:	Icewm window decoration for kwin - %{_name}
-Summary(pl):	Dekoracja icewm dla kwin - %{_name}
+Summary(pl.UTF-8):   Dekoracja icewm dla kwin - %{_name}
 Group:		Themes
 Requires:	kde-decoration-icewm
 
 %description -n kde-decoration-icewm-%{_name}
 Two Beos looking decorations for kwin.
 
-%description -n kde-decoration-icewm-%{_name} -l pl
+%description -n kde-decoration-icewm-%{_name} -l pl.UTF-8
 Dwie dekoracje podobne do Beos.
 
 %package -n kde-colorscheme-%{_name}
 Summary:	Color scheme for %{_name} theme
-Summary(pl):	Schemat kolorÛw dla motywu %{_name}
+Summary(pl.UTF-8):   Schemat kolor√≥w dla motywu %{_name}
 Group:		Themes
 Version:	%{_color_ver}
 Requires:	kdebase-core
@@ -68,13 +68,13 @@ Requires:	kdebase-core
 Three color schemes with gray window background and yellow/dark
 blue/green selection backgrounds.
 
-%description -n kde-colorscheme-%{_name} -l pl
-Trzy schematy kolorÛw z szarym t≥em okna i øÛ≥tym, ciemnoniebieskim
+%description -n kde-colorscheme-%{_name} -l pl.UTF-8
+Trzy schematy kolor√≥w z szarym t≈Çem okna i ≈º√≥≈Çtym, ciemnoniebieskim
 lub zielonym kolorem zaznaczenia.
 
 %package -n kde-colorscheme-%{_name}-thinkeramik
 Summary:	Extending color scheme for %{_name} theme for thinkeramik style
-Summary(pl):	Rozszerzenia schematÛw kolorÛw dla motywu %{_name} do stylu thinkeramik
+Summary(pl.UTF-8):   Rozszerzenia schemat√≥w kolor√≥w dla motywu %{_name} do stylu thinkeramik
 Group:		Themes
 Requires:	kdebase-core
 Requires:	kde-style-thinkeramik >= 3.2.1-2
@@ -84,14 +84,14 @@ Three extending colorschemes with light blue/blue/dark
 blue/green/yellow colors for active tab marker, progress bar
 background, slider and scrollbar.
 
-%description -n kde-colorscheme-%{_name}-thinkeramik -l pl
-Trzy rozszerzenia schematÛw kolorÛw z jasnoniebieskimi, niebieskimi,
-ciemnoniebieskimi, øÛ≥tymi lub zielonymi kolorami wyrÛznika aktywnej
-karty, suwaka, paska przewijania oraz t≥a paska postÍpu.
+%description -n kde-colorscheme-%{_name}-thinkeramik -l pl.UTF-8
+Trzy rozszerzenia schemat√≥w kolor√≥w z jasnoniebieskimi, niebieskimi,
+ciemnoniebieskimi, ≈º√≥≈Çtymi lub zielonymi kolorami wyr√≥znika aktywnej
+karty, suwaka, paska przewijania oraz t≈Ça paska postƒôpu.
 
 %package -n kde-colorscheme-%{_name}-activeheart
 Summary:	Extending color scheme for %{_name} theme for activeheart style
-Summary(pl):	Rozszerzenia schematÛw kolorÛw dla motywu %{_name} do stylu activeheart
+Summary(pl.UTF-8):   Rozszerzenia schemat√≥w kolor√≥w dla motywu %{_name} do stylu activeheart
 Group:		Themes
 Requires:	kdebase-core
 Requires:	kde-style-ActiveHeart >= 1.2.1-2
@@ -100,14 +100,14 @@ Requires:	kde-style-ActiveHeart >= 1.2.1-2
 Three extending colorschemes with blue/dark blue/green colors for
 active tab marker, progress bar background, slider and scrollbar.
 
-%description -n kde-colorscheme-%{_name}-activeheart -l pl
-Trzy rozszerzenia schematÛw kolorÛw z niebieskimi, ciemnoniebieskimi
-lub zielonymi kolorami wyrÛznika aktywnej karty, t≥a paska postÍpu,
+%description -n kde-colorscheme-%{_name}-activeheart -l pl.UTF-8
+Trzy rozszerzenia schemat√≥w kolor√≥w z niebieskimi, ciemnoniebieskimi
+lub zielonymi kolorami wyr√≥znika aktywnej karty, t≈Ça paska postƒôpu,
 suwaka oraz paska przewijania.
 
 %package -n kdm-user-pictures-%{_name}
 Summary:	KDM user picture - %{_name}
-Summary(pl):	Obrazki dla uøytkownikÛw w KDM - %{_name}
+Summary(pl.UTF-8):   Obrazki dla u≈ºytkownik√≥w w KDM - %{_name}
 Group:		Themes
 # Contains /usr/share/wallpapers
 Requires:	kdm
@@ -116,14 +116,14 @@ Requires:	kdm
 Two user pictures with a person on surfboard. One in yellow (normal
 user) and in red (root).
 
-%description -n kdm-user-pictures-%{_name} -l pl
-Dwa obrazki uøytkownikÛw z osob± na desce surfingowej. Jedna ubrana na
-øÛ≥to (zwyk≥y uøytkownik) i jedna na czerwono (root).
+%description -n kdm-user-pictures-%{_name} -l pl.UTF-8
+Dwa obrazki u≈ºytkownik√≥w z osobƒÖ na desce surfingowej. Jedna ubrana na
+≈º√≥≈Çto (zwyk≈Çy u≈ºytkownik) i jedna na czerwono (root).
 
 
 %package -n gdm-theme-%{_name}
 Summary:	A Wasp theme for the GNOME Display Manager
-Summary(pl):	Motyw Wasp do GDM
+Summary(pl.UTF-8):   Motyw Wasp do GDM
 Group:		Themes
 Requires:	gdm
 
@@ -133,15 +133,15 @@ and a login prompt under it. One with a yellow background, second
 yellow with a gray area in the top left corner and third with a gray
 background and yellow area in the top left corner.
 
-%description -n gdm-theme-%{_name} -l pl
-Trzy ekrany logowania do GDM z kreskÛwkow± ikon± komputera w ∂rodku i
-polem do logowania umieszczonym pod ni±. Jeden z nich ma ca≥e øÛ≥te
-t≥o, drugi øÛ≥te t≥o i szary wycinek w lewym gÛrnym rogu, a trzeci
-szare t≥o i øÛ≥ty wycinek.
+%description -n gdm-theme-%{_name} -l pl.UTF-8
+Trzy ekrany logowania do GDM z kresk√≥wkowƒÖ ikonƒÖ komputera w ≈õrodku i
+polem do logowania umieszczonym pod niƒÖ. Jeden z nich ma ca≈Çe ≈º√≥≈Çte
+t≈Ço, drugi ≈º√≥≈Çte t≈Ço i szary wycinek w lewym g√≥rnym rogu, a trzeci
+szare t≈Ço i ≈º√≥≈Çty wycinek.
 
 %package -n kde-splash-%{_name}
 Summary:	Splash screen %{_name} theme
-Summary(pl):	Ekran startowy dla motywu %{_name}
+Summary(pl.UTF-8):   Ekran startowy dla motywu %{_name}
 Group:		Themes
 Requires:	kdebase-desktop >= 9:3.1.90
 
@@ -150,14 +150,14 @@ Two splash screens (yellow and blue) with a "kde loading" bubble text
 in the top left corner and a cartoon looking, Beos-like computer icon
 to the right, and of course the standrad progress/icon bars.
 
-%description -n kde-splash-%{_name} -l pl
-Dwa ekrany startowe (niebieski i øÛ≥ty) z dymkiem z tekstem "kde
-loading" w lewym gÛrnym rogu oraz kreskÛwkow± ikon± komputera po
-prawej, no i oczywi∂cie standardowymi paskami postÍpu i ikon.
+%description -n kde-splash-%{_name} -l pl.UTF-8
+Dwa ekrany startowe (niebieski i ≈º√≥≈Çty) z dymkiem z tekstem "kde
+loading" w lewym g√≥rnym rogu oraz kresk√≥wkowƒÖ ikonƒÖ komputera po
+prawej, no i oczywi≈õcie standardowymi paskami postƒôpu i ikon.
 
 %package -n kde-kside-%{_name}
 Summary:	Kicker side image from %{_name}
-Summary(pl):	Boczny pasek do menu KDE z motywu %{_name}
+Summary(pl.UTF-8):   Boczny pasek do menu KDE z motywu %{_name}
 Group:		Themes
 Obsoletes:	kde-kside
 Provides:	kde-kside
@@ -167,21 +167,21 @@ Requires:	kdebase-desktop >= 9:3.1.90.030726-2
 A kicker side image with the "Wasp" text and a part of a cartoon
 looging computer icon.
 
-%description -n kde-kside-%{_name} -l pl
-Pasek boczny do menu KDE z napisem "Wasp" oraz fragmentem kreskÛwkowej
+%description -n kde-kside-%{_name} -l pl.UTF-8
+Pasek boczny do menu KDE z napisem "Wasp" oraz fragmentem kresk√≥wkowej
 ikony komputera.
 
 %package -n kopete-emoticons-%{_name}
 Summary:	Kopete emoticons from %{_name} theme
-Summary(pl):	Emotikony do kopete z tematu %{_name}
+Summary(pl.UTF-8):   Emotikony do kopete z tematu %{_name}
 Group:		Themes
 Requires:	kdenetwork-kopete
 
 %description -n kopete-emoticons-%{_name}
 Round, convex, dark yellow emoticons with dark red faces.
 
-%description -n kopete-emoticons-%{_name} -l pl
-Okr±g≥e, wypuk≥e, ciemnoøÛ≥te emotikony z ciemnoczerwonymi twarzami.
+%description -n kopete-emoticons-%{_name} -l pl.UTF-8
+OkrƒÖg≈Çe, wypuk≈Çe, ciemno≈º√≥≈Çte emotikony z ciemnoczerwonymi twarzami.
 
 %prep
 cd $RPM_BUILD_DIR
