@@ -4,7 +4,7 @@
 %define		_name	Wasp
 %define		_color_ver	0.4
 Summary:	KDE icons - %{_name}
-Summary(pl.UTF-8):   Motyw ikon do KDE - %{_name}
+Summary(pl.UTF-8):	Motyw ikon do KDE - %{_name}
 Name:		kde-theme-%{_name}
 Version:	2.6.1
 Release:	4
@@ -33,7 +33,7 @@ GNOME THemes Extras.
 
 %package -n kde-icons-%{_name}
 Summary:	KDE icon theme - %{_name}
-Summary(pl.UTF-8):   Motyw ikon do KDE - %{_name}
+Summary(pl.UTF-8):	Motyw ikon do KDE - %{_name}
 Group:		Themes
 Requires:	kdelibs
 
@@ -47,7 +47,7 @@ ale wciąż poważny wygląd.
 
 %package -n kde-decoration-icewm-%{_name}
 Summary:	Icewm window decoration for kwin - %{_name}
-Summary(pl.UTF-8):   Dekoracja icewm dla kwin - %{_name}
+Summary(pl.UTF-8):	Dekoracja icewm dla kwin - %{_name}
 Group:		Themes
 Requires:	kde-decoration-icewm
 
@@ -59,7 +59,7 @@ Dwie dekoracje podobne do Beos.
 
 %package -n kde-colorscheme-%{_name}
 Summary:	Color scheme for %{_name} theme
-Summary(pl.UTF-8):   Schemat kolorów dla motywu %{_name}
+Summary(pl.UTF-8):	Schemat kolorów dla motywu %{_name}
 Group:		Themes
 Version:	%{_color_ver}
 Requires:	kdebase-core
@@ -74,7 +74,7 @@ lub zielonym kolorem zaznaczenia.
 
 %package -n kde-colorscheme-%{_name}-thinkeramik
 Summary:	Extending color scheme for %{_name} theme for thinkeramik style
-Summary(pl.UTF-8):   Rozszerzenia schematów kolorów dla motywu %{_name} do stylu thinkeramik
+Summary(pl.UTF-8):	Rozszerzenia schematów kolorów dla motywu %{_name} do stylu thinkeramik
 Group:		Themes
 Requires:	kdebase-core
 Requires:	kde-style-thinkeramik >= 3.2.1-2
@@ -91,7 +91,7 @@ karty, suwaka, paska przewijania oraz tła paska postępu.
 
 %package -n kde-colorscheme-%{_name}-activeheart
 Summary:	Extending color scheme for %{_name} theme for activeheart style
-Summary(pl.UTF-8):   Rozszerzenia schematów kolorów dla motywu %{_name} do stylu activeheart
+Summary(pl.UTF-8):	Rozszerzenia schematów kolorów dla motywu %{_name} do stylu activeheart
 Group:		Themes
 Requires:	kdebase-core
 Requires:	kde-style-ActiveHeart >= 1.2.1-2
@@ -107,7 +107,7 @@ suwaka oraz paska przewijania.
 
 %package -n kdm-user-pictures-%{_name}
 Summary:	KDM user picture - %{_name}
-Summary(pl.UTF-8):   Obrazki dla użytkowników w KDM - %{_name}
+Summary(pl.UTF-8):	Obrazki dla użytkowników w KDM - %{_name}
 Group:		Themes
 # Contains /usr/share/wallpapers
 Requires:	kdm
@@ -123,7 +123,7 @@ Dwa obrazki użytkowników z osobą na desce surfingowej. Jedna ubrana na
 
 %package -n gdm-theme-%{_name}
 Summary:	A Wasp theme for the GNOME Display Manager
-Summary(pl.UTF-8):   Motyw Wasp do GDM
+Summary(pl.UTF-8):	Motyw Wasp do GDM
 Group:		Themes
 Requires:	gdm
 
@@ -141,7 +141,7 @@ szare tło i żółty wycinek.
 
 %package -n kde-splash-%{_name}
 Summary:	Splash screen %{_name} theme
-Summary(pl.UTF-8):   Ekran startowy dla motywu %{_name}
+Summary(pl.UTF-8):	Ekran startowy dla motywu %{_name}
 Group:		Themes
 Requires:	kdebase-desktop >= 9:3.1.90
 
@@ -157,7 +157,7 @@ prawej, no i oczywiście standardowymi paskami postępu i ikon.
 
 %package -n kde-kside-%{_name}
 Summary:	Kicker side image from %{_name}
-Summary(pl.UTF-8):   Boczny pasek do menu KDE z motywu %{_name}
+Summary(pl.UTF-8):	Boczny pasek do menu KDE z motywu %{_name}
 Group:		Themes
 Obsoletes:	kde-kside
 Provides:	kde-kside
@@ -173,7 +173,7 @@ ikony komputera.
 
 %package -n kopete-emoticons-%{_name}
 Summary:	Kopete emoticons from %{_name} theme
-Summary(pl.UTF-8):   Emotikony do kopete z tematu %{_name}
+Summary(pl.UTF-8):	Emotikony do kopete z tematu %{_name}
 Group:		Themes
 Requires:	kdenetwork-kopete
 
